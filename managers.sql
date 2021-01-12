@@ -1,5 +1,0 @@
-CREATE TABLE "Managers" (
-	staffID INTEGER PRIMARY KEY,
-	bonus REAL,
-	FOREIGN KEY staffID REFERENCES Staffs(staffID)
-);
