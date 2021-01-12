@@ -26,6 +26,8 @@ CREATE TABLE "Rooms"(
    floor INTEGER,
    roomView TEXT,
    price REAL CHECK (price>0),
+   staffID INTEGER,
+   branchID INTEGER,
    FOREIGN KEY (staffID) REFERENCES Staffs(staffID) ON DELETE NO ACTION ON UPDATE NO ACTION
    FOREIGN KEY (branchID) REFERENCES Branchs(branchID) ON DELETE NO ACTION ON UPDATE NO ACTION
    -- \avgStar
