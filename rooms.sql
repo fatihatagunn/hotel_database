@@ -23,7 +23,7 @@ CREATE TABLE "Rooms"(
          ),
    bedCount INTEGER
       CHECK (1<= bedCount AND bedCount>=4),
-   personCOUNT INTEGER CHECK (personCOUNT<6), --max 8
+   personCOUNT INTEGER CHECK (personCOUNT<6), 
    floor INTEGER,
    roomView TEXT,
    price REAL CHECK (price>0) NOT NULL,
