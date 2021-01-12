@@ -1,7 +1,8 @@
 CREATE TABLE "Rooms"(
    roomID INTEGER NOT NULL PRIMARY KEY,
    roomNumber INTEGER NOT NULL,
-   statu TEXT
+   statu TEXT NOT NULL,
+   type TEXT NOT NULL
       CHECK (statu 
          IN ('Single',
              'Double',
@@ -21,13 +22,13 @@ CREATE TABLE "Rooms"(
             )
          ),
    bedCount INTEGER
-      CHECK (bedCount IN ('1', '2', '3', '4')),
-   personCOUNT INTEGER,
+      CHECK (1<= bedCount AND bedCount>=4),
+   personCOUNT INTEGER CHECK (personCOUNT<6), --max 8
    floor INTEGER,
    roomView TEXT,
-   price REAL CHECK (price>0),
-   staffID INTEGER,
-   branchID INTEGER,
+   price REAL CHECK (price>0) NOT NULL,
+   staffID INTEGER NOT NULL,
+   branchID INTEGER NOT NULL,
    FOREIGN KEY (staffID) REFERENCES Staffs(staffID) ON DELETE NO ACTION ON UPDATE NO ACTION
    FOREIGN KEY (branchID) REFERENCES Branchs(branchID) ON DELETE NO ACTION ON UPDATE NO ACTION
    -- \avgStar
