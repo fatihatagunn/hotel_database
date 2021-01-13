@@ -1,12 +1,10 @@
 CREATE TABLE "Visites"(
-	roomID INT,
-	customerID INT,
-	year NUMERIC NOT NULL,
-	month TEXT NOT NULL,
-	day NUMERIC,
-	visitDay NUMERIC,
-	personCount INT,
-	CONSTRAINT PK_Visites PRIMARY KEY (roomID,customerID,year),
+	roomID INTEGER NOT NULL,
+	customerID INTEGER NOT NULL,
+	visitDate TEXT NOT NULL,
+	visitDay INTEGER NOT NULL,
+	personCount INTEGER CHECK( personCount>0 AND 5>=personCount),
+	CONSTRAINT PK_Visites PRIMARY KEY (roomID,customerID,visitDate),
 	FOREIGN KEY (roomID) REFERENCES Rooms(roomID) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	FOREIGN KEY (customerID) REFERENCES Customers(customerID) ON DELETE NO ACTION ON UPDATE NO ACTION
 	\totalPrice
