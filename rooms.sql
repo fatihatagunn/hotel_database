@@ -3,7 +3,7 @@ CREATE TABLE "Rooms"(
    roomNumber INTEGER NOT NULL,
    statu TEXT NOT NULL,
    type TEXT NOT NULL
-      CHECK (statu 
+      CHECK (type 
          IN ('Single',
              'Double',
              'Triple',
