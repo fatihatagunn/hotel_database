@@ -7,5 +7,5 @@ CREATE TABLE "Visites"(
 	CONSTRAINT PK_Visites PRIMARY KEY (roomID,customerID,visitDate),
 	FOREIGN KEY (roomID) REFERENCES Rooms(roomID) ON DELETE NO ACTION ON UPDATE NO ACTION,
 	FOREIGN KEY (customerID) REFERENCES Customers(customerID) ON DELETE NO ACTION ON UPDATE NO ACTION
-	\totalPrice
+	--\totalPrice
 	);
