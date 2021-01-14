@@ -1,4 +1,4 @@
-INSERT INTO Rooms (roomID, roomNumber, statu, types, bedTypes, bedCount, personCount, floor, roomView, price, staffID, branchID)
+INSERT INTO Rooms (roomID, roomNumber, statu, roomTypes, bedTypes, bedCount, personCount, floor, roomView, price, staffID, branchID)
 
 VALUES            (2460,    400,      'F',    'Single',    'Standart',     1,  1,  1,   'Beach',     400, ,  210),
 				  (2461,    402,      'F', 	  'Single',    'Double',       1,  1,  1,   NULL,        350, ,  210),
@@ -26,7 +26,7 @@ VALUES            (2460,    400,      'F',    'Single',    'Standart',     1,  1
 				  (4623, 	530,      'E',    'Penthouse', 'Round',        1,  2,  4, 	'Forest',   1000, ,  320),
 				  (2468, 	414,      'F',    'Triple',    'Standart',     3,  3,  2, 	'Beach',     450, ,  210),
 				  (2465, 	416,      'F',    'Suite',     'King',         1,  2,  3, 	NULL,        600, ,  210),
-				  (4624, 	524,      'F',    'Suite',     'Double',       2,  4,  3, 	'Mountain',  900, ,  320),
+				  (4692, 	524,      'F',    'Suite',     'Double',       2,  4,  3, 	'Mountain',  900, ,  320),
 				  (8259, 	638,      'F',    'King',      'King',         1,  2,  3, 	'Beach',     950, ,  430),
 				  (2464, 	418,      'F',    'Double',    'Double',       2,  4,  2, 	NULL,        550, ,  210),
 				  (8258, 	636,      'F',    'Single',    'Standart',     1,  1,  1, 	NULL,        250, ,  430),
