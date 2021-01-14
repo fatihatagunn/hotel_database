@@ -3,7 +3,7 @@ CREATE TABLE "Branchs"(
    branchName TEXT NOT NULL,
    street TEXT,
    city TEXT NOT NULL,
-   postcode TEXT,
-   \personalCount
+   postcode TEXT
+  -- \personalCount
 );
 
