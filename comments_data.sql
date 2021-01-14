@@ -1,7 +1,7 @@
 INSERT INTO Comments(customerID, commentsDate, star, comment)
-VALUES	(1,		'14 Aralık 2020',	5,	 NULL),
-		(4, 	'13 Temmuz 2019',	9,	'Ailecek çok memnun kaldık, seneye tekrar gelmeyi düşünüyoruz'),
-		(7, 	'5 Ocak 2020',		3,	'Hiç temiz bir odayla karşılaşmadım..'),
-		(8, 	'20 Ağustos 2019',	10,	'Orman manzaralı mükemmel bir odada kaldım'),
-		(9, 	'16 Şubat 2020',	7,	 NULL),
-		(10,	'8 Eylül 2020',		8,	'çok iyi');
+VALUES	(1,		'2019.07.13',	5,	 NULL),
+		(4, 	'2019.08.20',	9,	'Ailecek çok memnun kaldık, seneye tekrar gelmeyi düşünüyoruz'),
+		(7, 	'2020.01.05',	3,	'Hiç temiz bir odayla karşılaşmadım..'),
+		(8, 	'2020.02.16',	10,	'Orman manzaralı mükemmel bir odada kaldım'),
+		(9, 	'2020.09.08',	7,	 NULL),
+		(10,	'2020.12.14',	8,	'çok iyi bir otel');
