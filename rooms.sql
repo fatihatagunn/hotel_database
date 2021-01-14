@@ -22,7 +22,7 @@ CREATE TABLE "Rooms"(
             )
          ),
    bedCount INTEGER
-      CHECK (1<= bedCount AND bedCount>=4),
+      CHECK (1<= bedCount AND bedCount=>4),
    personCOUNT INTEGER CHECK (personCOUNT<6), 
    floor INTEGER,
    roomView TEXT,
