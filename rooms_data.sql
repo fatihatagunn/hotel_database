@@ -1,5 +1,4 @@
 INSERT INTO Rooms (roomID, roomNumber, statu, type, bedTypes, bedCount, personCount, floor, roomView, price, staffID, branchID)
-
 VALUES            (2460,    400,      'F',    'Single',    'Standart',     1,  1,  1,   'Beach',     400, 42,  210),
 				  (2461,    402,      'F', 	  'Single',    'Double',       1,  1,  1,   NULL,        350, 25,  210),
 				  (4620, 	510,      'F',    'King',      'King',         1,  2,  3,   'Forest', 	 700, 29,  320),
