@@ -6,7 +6,7 @@ CREATE TABLE "Staffs" (
 	phoneNumber TEXT NOT NULL UNIQUE
 		CHECK(phoneNumber LIKE '05_________'), -- '05...' ile başlayan 11 haneli telefon numarası kısıtlaması.
 	startDate TEXT NOT NULL
-		CHECK(startDate LIKE '20__.__.__'),
+		CHECK(startDate LIKE '20__-__-__'),
 	position TEXT NOT NULL
 		CHECK(position 
 			IN('Manager', 
