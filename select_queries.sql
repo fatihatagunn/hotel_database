@@ -4,6 +4,11 @@ SELECT B.branchID, B.branchName, B.street, B.city, B.postcode, COUNT(*) AS perso
 FROM Branchs AS B, Staffs AS S
 WHERE B.branchID = S.branchID GROUP BY B.branchID;
 
+--totalPrice
+
+SELECT V.roomID, R.roomID, V.visitDay, R.roomNumber, R.price, (R.price* V.visitDay) AS totalPrice 
+FROM Visites AS V, Rooms AS R WHERE V.roomID = R.roomID;
+
 -- Select Query with Comment for Visit
 
 SELECT V.roomID, V.customerID, V.visitDate, V.visitDay, C.commentsDate, V.personCount, C.star, C.comment
